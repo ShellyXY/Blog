@@ -1,0 +1,147 @@
+﻿
+@{
+    ViewBag.Title = "OrderCart";
+}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ 
+    <link rel="stylesheet" type="text/css" href="~/Content/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/css/style.css">
+</head>
+<body>
+    <div class="ct-pageWrapper">
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="widget">
+                            <h2 class="widget-header"></h2>
+                            <div class="ct-cart"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="ct-product">
+                                    <div class="image" ><img src="~/images/noodle.jpg" alt="" style="height:140px;width:270px;" ></div>
+                                    <div class="inner">
+                                        <a href="#" class="btn btn-motive ct-product-button"><i class="fa fa-shopping-cart"></i></a>
+                                        <h2 class="ct-product-title">Noodles</h2>
+                                        <p class="ct-product-description">The noodles with good eggs and meat.</p><span class="ct-product-price">$9.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="ct-product">
+                                    <div class="image"><img src="~/images/Changfen.jpg" alt=""  style="height:140px;width:270px;"></div>
+                                    <div class="inner">
+                                        <a href="#" class="btn btn-motive ct-product-button"><i class="fa fa-shopping-cart"></i></a>
+                                        <h2 class="ct-product-title">The steam powder</h2>
+                                        <p class="ct-product-description">A good street food in GuangDong.</p><span class="ct-product-price">$34.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="ct-product">
+                                    <div class="image"><img src="~/images/Baozi.jpg" alt="" style="height:140px;width:270px;"></div>
+                                    <div class="inner">
+                                        <a href="#" class="btn btn-motive ct-product-button"><i class="fa fa-shopping-cart"></i></a>
+                                        <h2 class="ct-product-title">Baozi</h2>
+                                        <p class="ct-product-description">A very delicious macaroons ...</p><span class="ct-product-price">$59.99</span>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="col-sm-4">
+                                <div class="ct-product">
+                                    <div class="image"><img src="~/images/GuoTie.jpg" alt="" style="height:140px;width:270px;"></div>
+                                    <div class="inner">
+                                        <a href="#" class="btn btn-motive ct-product-button"><i class="fa fa-shopping-cart"></i></a>
+                                        <h2 class="ct-product-title">GuoTie</h2>
+                                        <p class="ct-product-description">Many dumpings </p><span class="ct-product-price">$9.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="ct-product">
+                                    <div class="image"><img src="~/images/Roujiamo.jpg" alt="" style="height:140px;width:270px;"></div>
+                                    <div class="inner">
+                                        <a href="#" class="btn btn-motive ct-product-button"><i class="fa fa-shopping-cart"></i></a>
+                                        <h2 class="ct-product-title">RouJiaMo</h2>
+                                        <p class="ct-product-description">The fired meat with some spices.</p><span class="ct-product-price">$3.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="ct-product">
+                                    <div class="image"><img src="~/images/ShaoMai.jpg" alt="" style="height:140px;width:270px;"></div>
+                                    <div class="inner">
+                                        <a href="#" class="btn btn-motive ct-product-button"><i class="fa fa-shopping-cart"></i></a>
+                                        <h2 class="ct-product-title">ShaoMai</h2>
+                                        <p class="ct-product-description">A traditional food .</p><span class="ct-product-price">$13.99</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       <div>
+            <div class="ct-cart-name">
+                <label>Full Name : </label>
+                <div class="form-text">
+                    <span class="fa fa-phone" aria-hidden="true"></span>
+                    <input type="text" name="Name" placeholder="Name" required="">
+                </div>
+            </div>
+
+            <div class="phone_email">
+                <label>Phone Number : </label>
+                <div class="form-text">
+                    <span class="fa fa-phone" aria-hidden="true"></span>
+                    <input type="text" name="Phone no" placeholder="Phone no" required="">
+                </div>
+            </div>
+           
+            <div class="phone_email phone_email1">
+                <label>Address : </label>
+                <div class="form-text">
+                    <span class="fa fa-map-marker" aria-hidden="true"></span>
+                    <input type="text" name="address" placeholder="Your Address" required="">
+                </div>
+            </div>
+          </div>
+
+            <div>
+ <input type="button" value="Order Now" onclick="javascript:window.location='Contact'" />
+
+                </div>
+          
+
+      
+
+
+
+        </main>
+
+        <script src="~/js/js1/jquery-1.11.3.min.js"></script>
+        <script src="~/js/js1/shop.min.js"></script>
+        <script>
+$('body').ctshop({
+  currency: '$',
+  paypal: {
+	currency_code: 'EUR'
+  }
+});
+        </script>
+    </div>
+
+  
+</body>
+</html>

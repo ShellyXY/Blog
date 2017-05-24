@@ -1,0 +1,18 @@
+﻿@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 400;
+  src: local('CinzelDecorative-Regular'), url(http://fontstatic.useso.com/s/cinzeldecorative/v4/fmgK7oaJJIXAkhd9798yQt0Zu-Kfjb9GTaHd117aS3o.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Cinzel Decorative Bold'), local('CinzelDecorative-Bold'), url(http://fontstatic.useso.com/s/cinzeldecorative/v4/pXhIVnhFtL_B9Vb1wq2F91woV3Ase8nl0bf_DDHc7Tg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Cinzel Decorative Black'), local('CinzelDecorative-Black'), url(http://fontstatic.useso.com/s/cinzeldecorative/v4/pXhIVnhFtL_B9Vb1wq2F90KlpkgZQ3HHzCyqRJ1zOco.woff) format('woff');
+}
